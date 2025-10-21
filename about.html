@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Netflax</title>
+    <title>About Us - Netflax</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,54 +15,51 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="movies.html">Movies</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <h2 class="section-title">Contact Us</h2>
+        <h2 class="section-title">About Netflax</h2>
         
-        <div class="form-container">
-            <!-- Try the simple form action without JavaScript first -->
-            <form id="contactForm" action="https://formspree.io/f/xjvnqjwr" method="POST">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Mission</h3>
+                <p style="margin-bottom: 20px;">Netflax is dedicated to providing movie enthusiasts with comprehensive information about their favorite films, from classics to the latest releases.</p>
+                <p>We believe that cinema is more than just entertainment - it's an art form that connects people across cultures and generations.</p>
                 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+                <h3 style="margin: 30px 0 20px;">What We Offer</h3>
+                <ul>
+                    <li>Detailed movie information</li>
+                    <li>User reviews and ratings</li>
+                    <li>Movie recommendations</li>
+                    <li>Genre exploration</li>
+                    <li>Latest movie updates</li>
+                </ul>
+            </div>
+            
+            <div class="stats-container">
+                <h3 style="margin-bottom: 20px; border-bottom: 2px solid #333; padding-bottom: 10px;">Our Stats</h3>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Movies in Database</div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Select a subject</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="technical">Technical Issue</option>
-                        <option value="suggestion">Suggestion</option>
-                        <option value="partnership">Partnership</option>
-                    </select>
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">User Reviews</div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Genres Covered</div>
                 </div>
-                
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-        
-        <div class="contact-info">
-            <h3>Our Location</h3>
-            <p>123 Cinema Street, Movie City, MC 12345</p>
-            <p>Email: <a href="mailto:Amirulim912@gmail.com" style="color: #ffffff;">amirulim912@gmail.com</a></p>
-            <p>Phone: <a href="tel:+60174283856" style="color: #ffffff;">+(60)174283856</a></p>
+                <div class="stat-item">
+                    <div class="stat-number">2020</div>
+                    <div class="stat-label">Year Founded</div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -70,7 +67,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Netflax</h3>
+                    <h3>CineHub</h3>
                     <p>Discover the world of cinema in black and white</p>
                 </div>
                 
@@ -100,5 +97,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
